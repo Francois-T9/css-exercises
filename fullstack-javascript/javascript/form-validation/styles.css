@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.container {
+  background-color: gainsboro;
+  height: 60%;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.container .input-control {
+  display: grid;
+  gap: 5px;
+}
+
+.container .input-control input {
+  padding: 5px;
+}
+
+.container input:valid {
+  border-color: rgb(73, 223, 73);
+}
+
+.container input:invalid {
+  border-color: red;
+}
+
+.container input:focus {
+  border-color: rgb(229, 229, 241);
+}
+
+.error-message {
+  color: red;
+  font-size: smaller;
+  width: 100%;
+  height: 1em;
+}
